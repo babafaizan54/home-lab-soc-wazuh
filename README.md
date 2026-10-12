@@ -4,7 +4,7 @@ A hands-on Security Operations Center (SOC) lab built using Wazuh, Windows 11, S
 
 ## Architecture
 
-![Home Lab SOC Architecture](architecture/lab-architecture.svg)
+![Home Lab SOC Architecture](architecture/wazuh-soc-architecture.svg)
 
 ## Lab Environment
 
