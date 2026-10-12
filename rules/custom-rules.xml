@@ -1,0 +1,21 @@
+<escape><?xml version="1.0" encoding="UTF-8"?>
+<group name="local,sysmon,powershell,custom_detection,">
+
+  <!--
+    Rule: SOC Lab Controlled PowerShell Marker Detection
+    Rule ID: 100100
+    Purpose: Detect a specific marker in a PowerShell process-creation event.
+    Validation: Positive, negative, and case-sensitivity tests performed.
+  -->
+
+  <rule id="100100" level="7">
+    <if_sid>92027</if_sid>
+    <field name="win.eventdata.commandLine" type="pcre2">SOC-CUSTOM-DETECTION-01</field>
+    <description>SOC Lab: Controlled custom PowerShell marker detected</description>
+    <group>local,sysmon,powershell,custom_detection,</group>
+    <mitre>
+      <id>T1059.001</id>
+    </mitre>
+  </rule>
+
+</group></escape>
